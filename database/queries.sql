@@ -63,8 +63,7 @@ JOIN
 JOIN 
     item_master i ON od.item_id = i.item_id
 GROUP BY 
-    c.cust_name, 
-    i.item_description;
+    c.cust_name;
 
 
 -- 5. List the top 3 transactions (sales) for each customer

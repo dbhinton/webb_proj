@@ -44,7 +44,7 @@ Run the queries.sql script to execute the queries for the exercise questions:
 
 If you re-run the scripts (`schema.sql`, `data.sql`), here’s what you need to know:
 1. **`schema.sql`**: To avoid errors, the script includes `DROP TABLE IF EXISTS` statements to reset the database structure.
-2. **`data.sql`**: To prevent duplicate rows, the script clears existing data or uses `INSERT OR IGNORE`.
+2. **`data.sql`**: To prevent duplicate rows, the script clears existing data
 3. **`queries.sql`**: Safe to re-run as it only executes `SELECT` queries and does not modify the database.
 
 Always ensure the scripts are executed in the correct order: `schema.sql` → `data.sql` → `queries.sql`.
