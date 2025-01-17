@@ -34,7 +34,13 @@ Run the data.sql script to insert sample data into the tables:
 .read data.sql
 ```
 
-### Step 4: Run Queries
+### Step 4: Test Queries
+To ensure the project is set up correctly and functioning as expected, a `test.sql` script is included. This script validates:
+```sql
+.read test.sql
+```
+
+### Step 5: Run Queries
 Run the queries.sql script to execute the queries for the exercise questions:
 ```sql
 .read queries.sql
