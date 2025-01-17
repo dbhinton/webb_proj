@@ -40,6 +40,16 @@ Run the queries.sql script to execute the queries for the exercise questions:
 .read queries.sql
 ```
 
+## Note on Re-running Scripts
+
+If you re-run the scripts (`schema.sql`, `data.sql`), here’s what you need to know:
+1. **`schema.sql`**: To avoid errors, the script includes `DROP TABLE IF EXISTS` statements to reset the database structure.
+2. **`data.sql`**: To prevent duplicate rows, the script clears existing data or uses `INSERT OR IGNORE`.
+3. **`queries.sql`**: Safe to re-run as it only executes `SELECT` queries and does not modify the database.
+
+Always ensure the scripts are executed in the correct order: `schema.sql` → `data.sql` → `queries.sql`.
+
+
 ### Exercise Queries Explained
 - Question 1: Retrieve order details for "Jack's Plumbing," including order date, item description, sales, gross profit, and gross profit percentage.
 - Question 2: Calculate total sales, gross profit, and gross profit percentage for each item category.

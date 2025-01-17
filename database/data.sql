@@ -1,4 +1,10 @@
 
+DELETE FROM orders;
+DELETE FROM order_detail;
+DELETE FROM item_master;
+DELETE FROM customer;
+DELETE FROM price;
+
 INSERT INTO orders (ord_id, ord_date, cus_id)
 VALUES
 (1234, '2016-02-01', 533),

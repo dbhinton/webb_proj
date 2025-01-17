@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS order_detail;
+DROP TABLE IF EXISTS item_master;
+DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS price;
+
 -- schema.sql
 CREATE TABLE orders (
     ord_id INTEGER PRIMARY KEY AUTOINCREMENT,
